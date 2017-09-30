@@ -1,0 +1,65 @@
+% !TeX program = XeLateX
+\documentclass[a5paper,twoside,12pt]{book}
+\usepackage{shloka}
+\setmainfont[Script=Devanagari]{Sanskrit 2003}
+\usepackage[leading=normal]{savetrees}
+%\usepackage[top=1.5cm, bottom=1.8cm, left=1.5cm, right=1.5cm]{geometry}
+%\addtolength{\evensidemargin}{-0.5cm}
+%\addtolength{\oddsidemargin}{0.5cm}
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+
+\setcounter{secnumdepth}{-1}
+%for weird reasons this does not bookmark the section start, but the start of text in the section!!!
+%\renewcommand\thesection{}
+\renewcommand{\sectionmark}[1]{%
+\markboth{\large #1}{}}
+
+\newcommand{\calibri}{\font\x="Minion Pro" at 14pt \x}
+
+\addtolength{\headheight}{20pt}
+\lhead[\fancyplain{}{\calibri \thepage}]
+   {\fancyplain{}{\small \leftmark}}
+\rhead[\fancyplain{}{\small \leftmark}]
+   {\fancyplain{}{\calibri \thepage}}
+\cfoot{}
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{20pt}
+\setlength{\headsep}{4pt}
+\makeatletter
+\renewcommand\section{\newpage\@startsection {section}{1}{\z@}%
+																	%{2.3ex \@plus.2ex}%
+                                   %{-3.5ex \@plus -1ex \@minus -.2ex}%
+                                   %{2.3ex \@plus.2ex}%
+                                   {10pt}
+                                   {2pt}
+                                   {\normalfont\LARGE\bfseries\centering}}
+\makeatother
+
+\hbadness=10000
+\vbadness=10000
+
+\begin{document}
+\title{\font\x="Sanskrit 2003:script=deva,mapping=tex-text" at 48pt \x पूजा-विधानम्}
+%\title{\font\x="Sanskrit 2003:script=deva,mapping=tex-text" at 48pt \x एकादशीव्रतम्\\श्री महाविष्णुपूजा}
+\date{}
+\author{}
+\maketitle
+
+\newcommand{\ar}{\char"0930\char"094D\char"E009}
+\newcommand{\ur}{\char"0930\char"094D\char"200C}
+\newcommand{\sr}{\char"0930\char"094D\char"E007}
+\newcommand{\sn}{\char"0928\char"094D\char"E007}
+\newcommand{\snn}{\char"0928\char"094D\char"0928\char"094D\char"E007}
+\newcommand{\an}{\char"0928\char"094D\char"E009}
+\newcommand{\aav}{\char"093D\char"E009}
+\newcommand{\sav}{\char"093D\char"E007}
+
+\mbox{}\thispagestyle{empty}
+\clearpage
+\setcounter{page}{0}
+\pagenumbering{arabic}
+\setlength{\emergencystretch}{3em}
+\fontsize{16pt}{19.2pt}\selectfont
+\input{pujas/ekadashi-purusha-sukta-vidhanam.tex}
+\end{document}
