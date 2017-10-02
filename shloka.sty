@@ -21,19 +21,19 @@
 \RequirePackage{multicol}
 
 
-\newcommand{\pagenumfont}{\fontspec{Candara}}
+\newcommand{\pagenumfont}{\fontspec{Noto Sans UI}}
 
 \RequirePackage[titles]{tocloft}
 \renewcommand\contentsname{अनुक्रमणिका}
 \renewcommand{\partname}{विभागः}
 \renewcommand{\thepart}{{\dndigit{\arabic{part}}}}
-\renewcommand{\cftchappagefont}{\fontspec{Candara Bold}}
-\renewcommand{\cftpartpagefont}{\fontspec{Candara Bold}}
-\renewcommand{\cftsecpagefont}{\fontspec{Candara}}
-\renewcommand{\cftpartfont}{\LARGE\fontspec[Script=Devanagari]{Sanskrit 2003}}
-\renewcommand{\cftchapfont}{\Large\fontspec[Script=Devanagari]{Sanskrit 2003}}
-\renewcommand{\cftsecfont}{\fontspec[Script=Devanagari]{Sanskrit 2003}}
-\renewcommand{\cfttoctitlefont}{\LARGE\fontspec[Script=Devanagari]{Sanskrit 2003}}
+\renewcommand{\cftchappagefont}{\fontspec{Noto Sans UI Bold}}
+\renewcommand{\cftpartpagefont}{\fontspec{Noto Sans UI Bold}}
+\renewcommand{\cftsecpagefont}{\fontspec{Noto Sans UI}}
+\renewcommand{\cftpartfont}{\LARGE\fontspec[Script=Devanagari]{Siddhanta}}
+\renewcommand{\cftchapfont}{\Large\fontspec[Script=Devanagari]{Siddhanta}}
+\renewcommand{\cftsecfont}{\fontspec[Script=Devanagari]{Siddhanta}}
+\renewcommand{\cfttoctitlefont}{\LARGE\fontspec[Script=Devanagari]{Siddhanta}}
 %\newcommand{\s}{~$\cdot$}
 %\newcommand{\vsp}{\vspace{\stretch{1}}}
 \newcommand{\vsp}{\medskip}
@@ -389,11 +389,11 @@
 \fi}
 
 \newcommand{\sect}[1]{%
-\section[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}॥#1॥}%
+\section[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Siddhanta}॥#1॥}%
 }
 
 \newcommand{\chapt}[1]{%
-\chapter[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}॥#1॥}%
+\chapter[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Siddhanta}॥#1॥}%
 }
 
 \let\origdoublepage\cleardoublepage
@@ -404,7 +404,7 @@
 \newcommand{\dnsub}[1]{
 \medskip
 %\centerline{\Large\bfseries ॥#1॥ }
-\centerline{\Large\fontspec[FakeBold=0.125,FakeStretch=1.08,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003} ॥#1॥ }\nopagebreak[4]
+\centerline{\Large\fontspec[FakeBold=0.125,FakeStretch=1.08,Script=Devanagari,Mapping=tex-text]{Siddhanta} ॥#1॥ }\nopagebreak[4]
 \smallskip
 }
 
