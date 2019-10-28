@@ -1,0 +1,50 @@
+% !TeX program = XeLaTeX
+% THANKS: https://tex.stackexchange.com/questions/49746/a-table-with-square-cells
+\documentclass{standalone}
+\usepackage{xstring}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\newcommand{\Size}{2.5cm}% Adjust size of square as desired
+
+\def\NumOfColumns{3}%
+\def\Sequence{1/A, 2/B, 3/C}% This needs to match \NumOfColumns 
+
+\tikzset{Square/.style={
+    inner sep=0pt,
+    text width=\Size, 
+    minimum size=\Size,
+    draw=black,
+    % fill=yellow!20,
+    align=center
+    }
+}
+
+\newcommand{\graha}[3]{#1\\[1em]\small #2{वस्त्रम्}\\[-1ex]#3-मण्डलम्}
+% Define the contents of the cells here.
+\newcommand{\NodeAA}{\graha{४. बुधः}{हरित}{मुद्ग}}%
+\newcommand{\NodeAB}{\graha{६. शुक्रः}{श्वेत}{राजमाष}}%
+\newcommand{\NodeAC}{\graha{२. सोमः}{श्वेत}{तण्डुल}}%
+
+\newcommand{\NodeBA}{\graha{५. बृहस्पतिः}{पीत}{चणक}}%
+\newcommand{\NodeBB}{\graha{१. आदित्यः}{रक्त}{गोधूम}}%
+\newcommand{\NodeBC}{\graha{३. अङ्गारकः}{रक्त}{आढकी}}%
+
+\newcommand{\NodeCA}{\graha{९. केतुः}{कृष्ण}{कुलत्थ}}%
+\newcommand{\NodeCB}{\graha{७. शनैश्चरः}{कृष्ण}{तिल}}%
+\newcommand{\NodeCC}{\graha{८. राहुः}{कृष्ण}{माष}}%
+
+
+\begin{document}
+\setmainfont[Script=Devanagari]{Sanskrit 2003}
+\begin{tikzpicture}[draw=black, ultra thick, x=\Size,y=\Size]
+\Large
+    \foreach \col/\colLetter in \Sequence {%
+        \foreach \row/\rowLetter in \Sequence{%
+            \pgfmathtruncatemacro{\value}{\col+\NumOfColumns*(\row-1)}
+            \def\NodeText{\expandafter\csname Node\rowLetter\colLetter\endcsname}
+            \node [Square] at ($(\col,-\row)-(0.5,0.5)$) {\NodeText};
+        }
+    }
+\end{tikzpicture}
+\end{document}
