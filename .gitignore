@@ -220,3 +220,4 @@ TSWLatexianTemp*
 *-tags.tex
 *.xdv
 .vscode/settings.json
+*pdf/*.tex
