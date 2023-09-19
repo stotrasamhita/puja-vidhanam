@@ -1,5 +1,5 @@
 #!/bin/bash
-find ../pujas -name "*.tex" | grep -v old | grep -v MahaNyasah | grep -v rudra-prashnah | while read fpath
+find ../pujas -name "*.tex" | grep -v old | grep -v MahaNyasah | grep -v rudra-prashnah | grep -v ekadashi.tex | while read fpath
 do
 fname=`basename $fpath`
 echo "---------------------------------------------------------------"
@@ -13,7 +13,7 @@ then
 echo Rebuilding $jobname.pdf... > /dev/stderr
 echo Rebuilding $jobname.pdf...
 cat puja-kindle-template.tex ../pujas/$fname | sed 's@pujas/@../pujas/@;s@purvanga@../purvanga@;s@../stotra@../../stotra@;s@../appendices@../../appendices@;s@../namavali@../../namavali@;$a\\\\end{document}' > $jobname-vidhanam.tex
-latexmk -xelatex $jobname.tex
+latexmk -xelatex $jobname-vidhanam.tex -f
 else
 echo PDF up-to-date.
 fi
