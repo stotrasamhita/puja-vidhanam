@@ -1,5 +1,5 @@
 #!/bin/bash
-find ../pujas -name "*.tex" | while read fpath
+find ../pujas -name "*.tex" | grep -v old | grep -v MahaNyasah | grep -v rudra-prashnah | while read fpath
 do
 fname=`basename $fpath`
 echo "---------------------------------------------------------------"
@@ -12,7 +12,8 @@ if [[ $fpath -nt $jobname.pdf ]] || [[ puja-kindle-template.tex -nt $jobname.pdf
 then
 echo Rebuilding $jobname.pdf... > /dev/stderr
 echo Rebuilding $jobname.pdf...
-cat puja-kindle-template.tex ../pujas/$fname | sed 's@purvanga@../purvanga@;s@../stotra@../../stotra@;$a\\\\end{document}' | xelatex -jobname=$jobname
+cat puja-kindle-template.tex ../pujas/$fname | sed 's@pujas/@../pujas/@;s@purvanga@../purvanga@;s@../stotra@../../stotra@;s@../appendices@../../appendices@;s@../namavali@../../namavali@;$a\\\\end{document}' > $jobname-vidhanam.tex
+latexmk -xelatex $jobname.tex
 else
 echo PDF up-to-date.
 fi
