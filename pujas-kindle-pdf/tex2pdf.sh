@@ -17,4 +17,4 @@ latexmk -xelatex $jobname-vidhanam.tex -f
 else
 echo PDF up-to-date.
 fi
-done > tex2pdf.log 2>&1
+done > tex2pdf.log 
