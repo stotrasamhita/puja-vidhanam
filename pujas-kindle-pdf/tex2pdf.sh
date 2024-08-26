@@ -12,7 +12,8 @@ if [[ $fpath -nt $jobname.pdf ]] || [[ puja-kindle-template.tex -nt $jobname.pdf
 then
 echo Rebuilding $jobname.pdf... > /dev/stderr
 echo Rebuilding $jobname.pdf...
-cat puja-kindle-template.tex ../pujas/$fname | sed 's@pujas/@../pujas/@;s@kathas/@../kathas/@;s@purvanga@../purvanga@;s@../stotra@../../stotra@;s@../appendices@../../appendices@;s@../veda@../../veda@;s@../namavali@../../namavali@;$a\\\\end{document}' > $jobname-vidhanam.tex
+cat puja-kindle-template.tex ../pujas/$fname | sed 's@pujas/@../pujas/@;s@kathas/@../kathas/@;s@purvanga@../purvanga@;s@../stotra@../../stotra@;s@../appendices@../../appendices@;s@../veda@../../veda@;s@../namavali@../../namavali@' > $jobname-vidhanam.tex
+cat puja-footer-template.tex >> $jobname-vidhanam.tex
 latexmk -xelatex $jobname-vidhanam.tex -f
 else
 echo PDF up-to-date.
