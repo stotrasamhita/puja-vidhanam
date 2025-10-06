@@ -184,6 +184,7 @@
 {दधि क्षौद्रं घृतं शुद्धं कपिलायाः सुगन्धि यत्}
 {सुस्वादु मधुरं शौरे मधुपर्कं गृहाण भोः}
 \textbf{\devAya{} मधुपर्कं समर्पयामि।}
+\textbf{\devAya{} आचमनीयं समर्पयामि।}
 \medskip
 
 
@@ -611,8 +612,12 @@
 
 \end{center}
 
-\input{kathas/janmashtami/janmashtami-vrata-katha}
+\ifbool{katha}{\input{kathas/janmashtami/janmashtami-vrata-katha}}{}
 
-\input{kathas/janmashtami/bhagavatam-10-03}
+\ifbool{katha}{\input{kathas/janmashtami/bhagavatam-10-03}}{}
+
+\ifbool{katha}{\input{kathas/janmashtami/harivamsha-krishnajanma.tex}}{}
+
+\ifbool{katha}{\input{../stotra-sangrahah/stotras/big/KrishnaNamaMahatmyam.tex}}{}
 
 \closesection
