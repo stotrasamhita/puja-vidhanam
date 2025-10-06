@@ -1,12 +1,17 @@
 \documentclass[oneside,12pt]{book}
 \usepackage{etoolbox}
 \usepackage{needspace}
+\newbool{individual}
+\setbool{individual}{true}
+\newbool{katha}
+\setbool{katha}{true}
 \newbool{kindle}
 \newbool{print}
 \setbool{kindle}{true}
 \usepackage[paperwidth=192mm,paperheight=254mm,left=4mm,right=4mm,top=9mm,bottom=10mm]{geometry}
 \addtolength{\headsep}{-4mm}
 \input{../preamble}
+\hypersetup{bookmarksdepth=2}
 \ifbool{print}{%Margin changes for print
 \addtolength{\evensidemargin}{-0.5cm}
 \addtolength{\oddsidemargin}{0.5cm}}{}
