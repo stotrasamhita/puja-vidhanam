@@ -78,6 +78,10 @@
 \newcommand{\nextShloka}{\stepcounter{shlokacount}\devanumber\c@shlokacount\relax}
 \newcommand{\resetShloka}{\setcounter{shlokacount}{0}}
 \resetShloka
+% A zero-width box with the height of 'र्क॑' (tallest) and depth of 'ष्ट्र्य्' (deepest)
+% Adjust the characters inside {} to be your "worst case" scenario.
+% \newcommand{\ShlokaStrut}{\vphantom{र्क॑ ष्ट्र्य्}}
+\newcommand{\ShlokaStrut}{}
 
 \newcommand{\twolineshloka}{\@ifstar
                      \twolineshlokaStar%
@@ -91,8 +95,8 @@
 
 \newcommand{\twolineshlokaNoStar}[2]{%
 \vskip\shlokavskip\vsp
-\setbox\@tempboxa=\hbox{#1}%
-\setbox\@tempboxb=\hbox{#2}%
+\setbox\@tempboxa=\hbox{\ShlokaStrut #1}%
+\setbox\@tempboxb=\hbox{\ShlokaStrut #2}%
 \ifdim\wd\@tempboxa>\wd\@tempboxb%
 \@tempdima=\wd\@tempboxa%
 \shlokatopskip\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa ।}\shlokamidskip\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}॥\relax \nextShloka॥}}\hfil}%
@@ -103,17 +107,17 @@
 
 \newcommand{\onelineshlokaNoStar}[1]{%
 \vskip\shlokavskip\vsp
-\centerline{#1॥\nextShloka॥}}
+\centerline{\ShlokaStrut #1॥\nextShloka॥}}
 
 \newcommand{\onelineshlokaStar}[1]{%
 \vskip\shlokavskip\vsp
-\centerline{#1।}}
+\centerline{\ShlokaStrut #1।}}
 
 
 \newcommand{\annotwolineshloka}[3]{%
 \vskip\shlokavskip\vsp
-\setbox\@tempboxa=\hbox{#1}%
-\setbox\@tempboxb=\hbox{#2}%
+\setbox\@tempboxa=\hbox{\ShlokaStrut #1}%
+\setbox\@tempboxb=\hbox{\ShlokaStrut #2}%
 \ifdim\wd\@tempboxa>\wd\@tempboxb%
 \@tempdima=\wd\@tempboxa%
 \shlokatopskip\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa ।}\shlokamidskip\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}॥\relax \nextShloka॥\footnotesize{#3}\hspace{-3ex}}}\hfil}%
@@ -124,8 +128,8 @@
 
 \newcommand{\twolineshlokaStar}[2]{%
 \vskip\shlokavskip\vsp
-\setbox\@tempboxa=\hbox{#1}%
-\setbox\@tempboxb=\hbox{#2}%
+\setbox\@tempboxa=\hbox{\ShlokaStrut #1}%
+\setbox\@tempboxb=\hbox{\ShlokaStrut #2}%
 \ifdim\wd\@tempboxa>\wd\@tempboxb%
 \@tempdima=\wd\@tempboxa%
 \shlokatopskip\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa ।}\shlokamidskip\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}॥}}\hfil}%
@@ -141,9 +145,9 @@
 
 \newcommand{\threelineshlokaStar}[3]{%
 \vskip\shlokavskip\vsp
-\setbox\@tempboxa=\hbox{#1}%
-\setbox\@tempboxb=\hbox{#2}%
-\setbox\@tempboxc=\hbox{#3}%
+\setbox\@tempboxa=\hbox{\ShlokaStrut #1}%
+\setbox\@tempboxb=\hbox{\ShlokaStrut #2}%
+\setbox\@tempboxc=\hbox{\ShlokaStrut #3}%
 \ifdim\wd\@tempboxa>\wd\@tempboxb%
 \@tempdima=\wd\@tempboxa%
 \ifdim\wd\@tempboxa>\wd\@tempboxc%
@@ -173,9 +177,9 @@
 
 \newcommand{\threelineshlokaNoStar}[3]{%
 \vskip\shlokavskip\vsp
-\setbox\@tempboxa=\hbox{#1}%
-\setbox\@tempboxb=\hbox{#2}%
-\setbox\@tempboxc=\hbox{#3}%
+\setbox\@tempboxa=\hbox{\ShlokaStrut #1}%
+\setbox\@tempboxb=\hbox{\ShlokaStrut #2}%
+\setbox\@tempboxc=\hbox{\ShlokaStrut #3}%
 \ifdim\wd\@tempboxa>\wd\@tempboxb%
 \@tempdima=\wd\@tempboxa%
 \ifdim\wd\@tempboxa>\wd\@tempboxc%
@@ -209,10 +213,10 @@
 
 \newcommand{\fourlineindentedshlokaNoStar}[4]{%
 \vskip\shlokavskip\vsp
-\setbox\@tempboxa=\hbox{#1}%
-\setbox\@tempboxb=\hbox{#3}%
-\setbox\@tempboxc=\hbox{#2}%
-\setbox\@tempboxd=\hbox{#4}%
+\setbox\@tempboxa=\hbox{\ShlokaStrut #1}%
+\setbox\@tempboxb=\hbox{\ShlokaStrut #3}%
+\setbox\@tempboxc=\hbox{\ShlokaStrut #2}%
+\setbox\@tempboxd=\hbox{\ShlokaStrut #4}%
 \ifdim\wd\@tempboxa>\wd\@tempboxb%
 \@tempdima=\wd\@tempboxa%
 \ifdim\wd\@tempboxc>\wd\@tempboxd%
@@ -247,10 +251,10 @@
 
 \newcommand{\fourlineindentedshlokaStar}[4]{%
 \vskip\shlokavskip\vsp
-\setbox\@tempboxa=\hbox{#1}%
-\setbox\@tempboxb=\hbox{#3}%
-\setbox\@tempboxc=\hbox{#2}%
-\setbox\@tempboxd=\hbox{#4}%
+\setbox\@tempboxa=\hbox{\ShlokaStrut #1}%
+\setbox\@tempboxb=\hbox{\ShlokaStrut #3}%
+\setbox\@tempboxc=\hbox{\ShlokaStrut #2}%
+\setbox\@tempboxd=\hbox{\ShlokaStrut #4}%
 \ifdim\wd\@tempboxa>\wd\@tempboxb%
 \@tempdima=\wd\@tempboxa%
 \ifdim\wd\@tempboxc>\wd\@tempboxd%
@@ -285,10 +289,10 @@
 
 \newcommand{\annofourlineindentedshloka}[5]{%annotated fourlineindentedshloka
 \vskip\shlokavskip\vsp
-\setbox\@tempboxa=\hbox{#1}%
-\setbox\@tempboxb=\hbox{#3}%
-\setbox\@tempboxc=\hbox{#2}%
-\setbox\@tempboxd=\hbox{#4}%
+\setbox\@tempboxa=\hbox{\ShlokaStrut #1}%
+\setbox\@tempboxb=\hbox{\ShlokaStrut #3}%
+\setbox\@tempboxc=\hbox{\ShlokaStrut #2}%
+\setbox\@tempboxd=\hbox{\ShlokaStrut #4}%
 \ifdim\wd\@tempboxa>\wd\@tempboxb%
 \@tempdima=\wd\@tempboxa%
 \ifdim\wd\@tempboxc>\wd\@tempboxd%
@@ -323,10 +327,10 @@
 
 \newcommand{\fourlineshloka}[4]{%
 \vskip\shlokavskip\vsp
-\setbox\@tempboxa=\hbox{#1}%
-\setbox\@tempboxb=\hbox{#3}%
-\setbox\@tempboxc=\hbox{#2}%
-\setbox\@tempboxd=\hbox{#4}%
+\setbox\@tempboxa=\hbox{\ShlokaStrut #1}%
+\setbox\@tempboxb=\hbox{\ShlokaStrut #3}%
+\setbox\@tempboxc=\hbox{\ShlokaStrut #2}%
+\setbox\@tempboxd=\hbox{\ShlokaStrut #4}%
 \ifdim\wd\@tempboxa>\wd\@tempboxb%
 \@tempdima=\wd\@tempboxa%
 \ifdim\wd\@tempboxc>\wd\@tempboxd%
@@ -361,9 +365,9 @@
 
 \newcommand{\THREElineshloka}[3]{%
 \vskip\shlokavskip\vsp
-\setbox\@tempboxa=\hbox{#1}%
-\setbox\@tempboxb=\hbox{#2}%
-\setbox\@tempboxc=\hbox{#3}%
+\setbox\@tempboxa=\hbox{\ShlokaStrut #1}%
+\setbox\@tempboxb=\hbox{\ShlokaStrut #2}%
+\setbox\@tempboxc=\hbox{\ShlokaStrut #3}%
 \ifdim\wd\@tempboxa>\wd\@tempboxb%
 \@tempdima=\wd\@tempboxa%
 \ifdim\wd\@tempboxa>\wd\@tempboxc%
@@ -402,8 +406,9 @@
 }
 
 \newcommand{\chapt}[1]{%
-%\chapter[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Siddhanta}॥#1॥}%
-\chapter[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}॥#1॥}%
+\newpage
+\chapter[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text,Scale=1.6]{Adishila Heavy}॥~#1॥}%
+\resetSankalpa
 }
 
 \let\origclearpage\clearpage
@@ -417,7 +422,7 @@
 }
 
 \newcommand{\dnsub}[1]{
-  \needspace{6em}\medskip
+\needspace{4em}\medskip
 \centerline{\Large\fontspec[FakeBold=1.0,FakeStretch=1.08,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003} ॥#1॥ }\nopagebreak[4]
 %\centerline{\Large\fontspec[FakeBold=1.0,FakeStretch=1.2,Script=Devanagari,Mapping=tex-text]{Siddhanta} ॥#1॥ }\nopagebreak[4]
 \smallskip
