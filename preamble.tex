@@ -3,6 +3,7 @@
 \renewcommand{\baselinestretch}{0.9}
 \newcommand{\resetSankalpa}{}
 \usepackage{shloka}
+\usepackage{multirow}
 \newcounter{totalshlokas}
 \usepackage{wasysym}
 \usepackage{longtable}
@@ -79,6 +80,8 @@ urlcolor=blue                  % colour of external links
 \setlist{nosep}
 \newcommand{\see}[1]{\footnote{पृष्टं~\pageref{#1} पश्यताम्}}
 \newcommand{\devaName}{देव}
+\newcommand{\devAya}{}
+\newcommand{\devaH}{}
 
 \newcommand{\achamanam}{आचमनम्।}
 \newcommand{\achamya}{(आचम्य)}
@@ -87,43 +90,48 @@ urlcolor=blue                  % colour of external links
 {शुक्लाम्बरधरं विष्णुं शशिवर्णं चतुर्भुजम्}
 {प्रसन्नवदनं ध्यायेत् सर्वविघ्नोपशान्तये}
 }
+
+\newcommand{\blank}{(\mbox{~~~})}
+
 \newcommand{\pranayama}{प्राणान् आयम्य।}
-\newcommand{\samvatsara}{\mbox{(~~~)}\see{app:samvatsara_names}}
-\newcommand{\ayane}{\mbox{(~~~)}}
-\newcommand{\rtu}{\mbox{(~~~)}}
-\newcommand{\masa}{\mbox{(~~~)}}
+\newcommand{\samvatsara}{\blank\see{app:samvatsara_names}}
+\newcommand{\ayane}{\blank}
+\newcommand{\rtu}{\blank}
+\newcommand{\masa}{\blank}
 \newcommand{\paksha}{(शुक्ल / कृष्ण)}
-\newcommand{\tithau}{\mbox{(~~~)}}
+\newcommand{\tithau}{\blank}
 \newcommand{\vasara}{(इन्दु / भौम / सौम्य / गुरु / भृगु / स्थिर / भानु)}
-\newcommand{\nakshatra}{\mbox{(~~~)}\see{app:nakshatra_names}}
-\newcommand{\yoga}{\mbox{(~~~)}\see{app:yoga_names}}
-\newcommand{\karana}{\mbox{(~~~)}\see{app:karanam_names}}
+\newcommand{\nakshatra}{\blank\see{app:nakshatra_names}}
+\newcommand{\yoga}{\blank\see{app:yoga_names}}
+\newcommand{\karana}{\blank\see{app:karanam_names}}
 \newcommand{\regularSankalpa}{अस्माकं सहकुटुम्बानां क्षेमस्थैर्य-धैर्य-वीर्य-विजय-आयुरारोग्य-ऐश्वर्याभिवृद्ध्यर्थं
 धर्मार्थकाममोक्ष\-चतुर्विधफलपुरुषार्थसिद्ध्यर्थं पुत्रपौत्राभि\-वृद्ध्यर्थम् इष्टकाम्यार्थसिद्ध्यर्थं
 मम इहजन्मनि पूर्वजन्मनि जन्मान्तरे च सम्पादितानां ज्ञानाज्ञानकृतमहा\-पातकचतुष्टय-व्यतिरिक्तानां
 रहस्यकृतानां प्रकाशकृतानां सर्वेषां पापानां सद्य अपनोदनद्वारा सकल-पापक्षयार्थं}
 \newcommand{\additionalSankalpa}{}
 \newcommand{\kaale}{}
+\newcommand{\prakaarena}{}
 \newcommand{\prityartham}{} 
 \newcommand{\pujaam}{}
 
 \renewcommand{\resetSankalpa}{
-\renewcommand{\samvatsara}{\mbox{(~~~)}\see{app:samvatsara_names}}
+\renewcommand{\samvatsara}{\blank\see{app:samvatsara_names}}
 \renewcommand{\ayane}{(उत्तरायणे/दक्षिणायने)}
-\renewcommand{\rtu}{\mbox{(~~~)}}
-\renewcommand{\masa}{\mbox{(~~~)}}
+\renewcommand{\rtu}{\blank}
+\renewcommand{\masa}{\blank}
 \renewcommand{\paksha}{(शुक्ल / कृष्ण)}
-\renewcommand{\tithau}{\mbox{(~~~)}}
+\renewcommand{\tithau}{\blank}
 \renewcommand{\vasara}{(इन्दु / भौम / सौम्य / गुरु / भृगु / स्थिर / भानु)}
-\renewcommand{\nakshatra}{\mbox{(~~~)}\see{app:nakshatra_names}}
-\renewcommand{\yoga}{\mbox{(~~~)}\see{app:yoga_names}}
-\renewcommand{\karana}{\mbox{(~~~)}\see{app:karanam_names}}
+\renewcommand{\nakshatra}{\blank\see{app:nakshatra_names}}
+\renewcommand{\yoga}{\blank\see{app:yoga_names}}
+\renewcommand{\karana}{\blank\see{app:karanam_names}}
 \renewcommand{\regularSankalpa}{अस्माकं सहकुटुम्बानां क्षेमस्थैर्य-धैर्य-वीर्य-विजय-आयुरारोग्य-ऐश्वर्याभिवृद्ध्यर्थं
 धर्मार्थकाममोक्ष\-चतुर्विधफलपुरुषार्थसिद्ध्यर्थं पुत्रपौत्राभि\-वृद्ध्यर्थम् इष्टकाम्यार्थसिद्ध्यर्थं
 मम इहजन्मनि पूर्वजन्मनि जन्मान्तरे च सम्पादितानां ज्ञानाज्ञानकृतमहा\-पातकचतुष्टय-व्यतिरिक्तानां
 रहस्यकृतानां प्रकाशकृतानां सर्वेषां पापानां सद्य अपनोदनद्वारा सकल-पापक्षयार्थं}
 \renewcommand{\additionalSankalpa}{}
 \renewcommand{\kaale}{}
+\renewcommand{\prakaarena}{}
 \renewcommand{\prityartham}{} 
 \renewcommand{\pujaam}{}   
 }
@@ -145,12 +153,13 @@ urlcolor=blue                  % colour of external links
 \textbf{\nakshatra}-नक्षत्र-%
 \textbf{\yoga}-योग-%
 \textbf{\karana}-करण-युक्तायां
-च एवं गुण विशेषण विशिष्टायाम् अस्याम्\\
+च एवं गुण-विशेषण-विशिष्टायाम् अस्याम्\\
 \textbf{\tithau{}} शुभतिथौ 
 \regularSankalpa{}
 \additionalSankalpa{}
 \prityartham{}
 \kaale{}
+\prakaarena{}
 यथाशक्ति-ध्यान-आवाहनादि-षोडशो\-पचारैः 
 \pujaam{} करिष्ये।\\
 तदङ्गं कलशपूजां च करिष्ये। 
@@ -159,11 +168,29 @@ urlcolor=blue                  % colour of external links
 श्रीविघ्नेश्वराय नमः यथास्थानं प्रतिष्ठापयामि। शोभनार्थे क्षेमाय पुनरागमनाय च।\\
 (गणपति-प्रसादं शिरसा गृहीत्वा)}
 
-\newcommand{\kshama}{\sect{अपराध-क्षमापनम्}
+\newcommand{\aavaahitobhava}{
+आवाहितो भव। स्थापितो भव। सन्निहितो भव। सन्निरुद्धो भव। अवकुण्ठितो भव।
+
+प्रीतो भव। सुप्रसन्नो भव। सुमुखो भव। वरदो भव। प्रसीद प्रसीद॥
+
+\twolineshloka*
+{स्वामिन् सर्वजगन्नाथ यावत्पूजावसानकम्}
+{तावत् त्वं प्रीतिभावेन बिम्बेऽस्मिन् सन्निधिं कुरु} 
+
+\centerline{॥इति प्राणप्रतिष्ठा॥}
+}
+
+\newcommand{\hiranyagarbha}{
+\twolineshloka*
+{हिरण्यगर्भगर्भस्थं हेमबीजं विभावसोः}
+{अनन्तपुण्यफलदम् अतः शान्तिं प्रयच्छ मे}
+}
+
+\newcommand{\kshama}[1]{\dnsub{अपराध-क्षमापनम्}
 
 \twolineshloka*
 {यस्य स्मृत्या च नामोक्त्या तपः-पूजा-क्रियादिषु}
-{न्यूनं सम्पूर्णतां याति सद्यो वन्दे तमच्युतम्}
+{न्यूनं सम्पूर्णतां याति सद्यो वन्दे #1}
 
 \fourlineindentedshloka*
 {कायेन वाचा मनसेन्द्रियैर्वा}
@@ -172,3 +199,7 @@ urlcolor=blue                  % colour of external links
 {नारायणायेति समर्पयामि}
 
 \centerline{सर्वं तत्सद्ब्रह्मार्पणमस्तु।}}
+
+\newcommand{\OM}{\ifbool{veda}{ॐ}{}}
+
+\newcommand{\OMshri}{\ifbool{veda}{ॐ~}{श्री-}}
