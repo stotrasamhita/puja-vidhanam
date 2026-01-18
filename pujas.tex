@@ -2,41 +2,50 @@
 % !TeX root = pujavidhanam.tex
 \setcounter{page}{0}
 \pagenumbering{arabic}
-\part{व्रतपूजाः}
+\part{नित्य एवं मासिक-पर्व-पूजाः}
 
 \sectionmark{\mbox{}}
 \renewcommand{\chaptermark}[1]{%
     \markboth{\large #1}{}}
 \input{pujas/laghu-panchayatana-puja}
+
 \input{pujas/ekadashi-purusha-sukta-vidhana-puja}
+\input{pujas/sankataharachaturthi-vinayaka-puja}
+
+\part{वार्षिक-व्रतपूजाः}
 \input{pujas/panchanga-puja}
 \input{pujas/sriramanavami-puja}
 \input{pujas/shankara-jayanti-puja}
 \input{pujas/nrisimha-jayanti-puja}
 \input{pujas/varamahalakshmi-puja}
-\input{pujas/sankataharachaturthi-vinayaka-puja}
+\ifbool{veda}{\input{pujas/yajur-upakarma}}{}
 \input{pujas/janmashtami-puja}
 \input{pujas/siddhivinayaka-puja}
 % \input{pujas/navaratri-puja}
 \input{pujas/sarasvati-puja}
 \input{pujas/dhanvantari-puja}
 \input{pujas/lakshmi-kubera-puja}
-% \input{pujas/yama-puja-tarpanam}
 % \input{pujas/govardhana-puja}
-\input{pujas/kartika-somavara-arghyam}
 \input{pujas/skanda-shashthi-puja}
 \input{pujas/brindavana-puja}
-\input{pujas/surya-namaskara}
+\input{pujas/surya-puja}
+\input{pujas/go-puja}
 \input{pujas/shivaratri-puja}
 \input{pujas/savitri-vratam}
+
+\part{नैमित्तिक-अनुष्ठानानि}
 \input{pujas/sankramana-snanam}
+\input{pujas/kartika-somavara-arghyam}
 \input{pujas/kartika-mahatmyam}
 \input{pujas/ganga-puja}
 \input{pujas/kaveri-puja}
+\input{pujas/surya-namaskara}
+% \input{pujas/yama-puja-tarpanam}
 \clearemptydoublepage
 
 \part{उपाङ्गाः}
 \input{appendices/samvatsara-names}
+\input{appendices/masa-names}
 \input{appendices/nakshatra-names}
 \input{appendices/yoga-names}
 \input{appendices/karana-names}
