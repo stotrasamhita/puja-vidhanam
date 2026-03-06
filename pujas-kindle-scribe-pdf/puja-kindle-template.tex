@@ -12,6 +12,9 @@
 \setbool{veda}{true}
 \usepackage[paperwidth=192mm,paperheight=254mm,left=4mm,right=4mm,top=9mm,bottom=10mm]{geometry}
 \addtolength{\headsep}{-4mm}
+\makeatletter
+\def\input@path{{../}}
+\makeatother
 \input{../preamble}
 \hypersetup{bookmarksdepth=2}
 \ifbool{print}{%Margin changes for print
@@ -20,9 +23,6 @@
 \setlength{\emergencystretch}{3em}
 \usepackage{fontawesome}
 \renewcommand{\see}[1]{}
-\makeatletter
-\def\input@path{{../}}
-\makeatother
 \newcommand{\maxColumns}{3}
 \begin{document}
 % \setmainfont[Script=Devanagari,Mapping={devanagarinumerals},AutoFakeBold=2.0]{Noto Serif Devanagari}
