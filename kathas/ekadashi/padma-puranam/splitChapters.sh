@@ -31,10 +31,24 @@ def devanagari_to_int(digits):
     return int("".join(str(DEVANAGARI_DIGITS.index(ch)) for ch in digits))
 
 
+# A few labels fuse "krishna"/"shukla" into the ekadashi name via sandhi
+# (e.g. krishna + aja -> krishnaja, for कृष्ण + अजा -> कृष्णाजा), so the
+# last hyphen-segment isn't the plain name. Not reversible from the plain
+# label alone, so these are called out explicitly (checked against the
+# chapter's Devanagari \sect{} title).
+SANDHI_SLUG_OVERRIDES = {
+    "shuklamalaki": "amalaki",    # शुक्ल + आमलकी -> शुक्लामलकी
+    "krishnapara": "apara",       # कृष्ण + अपरा -> कृष्णापरा
+    "krishnaja": "aja",           # कृष्ण + अजा -> कृष्णाजा
+    "krishnendira": "indira",     # कृष्ण + इन्दिरा -> कृष्णेन्दिरा
+}
+
+
 def slug_from_label(label):
     last = label.strip().split("-")[-1]
     last = last.split()[0]  # guard against stray spaces, e.g. a typo'd label
-    return re.sub(r"[^a-z0-9]+", "", last.lower())
+    slug = re.sub(r"[^a-z0-9]+", "", last.lower())
+    return SANDHI_SLUG_OVERRIDES.get(slug, slug)
 
 
 with open(SRC, encoding="utf-8") as f:
