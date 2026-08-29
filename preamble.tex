@@ -42,7 +42,47 @@
 {\normalfont\LARGE\bfseries\centering}}
 \makeatother
 
-%% ADD TCOLORBOX FOR DHUPAM ETC!
+%%% INFOBOX / CALLOUT BOXES %%%
+\usepackage{tcolorbox}
+\definecolor{PujaMaroon}{RGB}{128,0,32}
+\definecolor{PujaSaffron}{RGB}{204,102,0}
+\definecolor{PujaCream}{RGB}{255,248,235}
+
+% \pujainfobox[image-path]{body} -- a Wikipedia-style summary panel for the
+% top of a puja chapter. The image is optional; omit the optional argument
+% (or leave it empty) to get a text-only box. #2 is free-form content, so
+% each puja can list whichever facts (deity, occasion, month, source text,
+% ...) actually apply to it.
+\newcommand{\pujainfobox}[2][]{%
+\begin{center}
+\begin{tcolorbox}[
+  width=0.92\linewidth,
+  colback=PujaCream,
+  colframe=PujaMaroon,
+  boxrule=0.6pt,
+  arc=2pt,
+  left=7pt,right=7pt,top=5pt,bottom=5pt,
+]
+\ifblank{#1}{}{\begin{center}\includegraphics[width=0.34\linewidth]{#1}\end{center}\medskip}
+#2
+\end{tcolorbox}
+\end{center}
+}
+
+% \pujanote{text} -- a slim callout for procedural stage-directions
+% (e.g. "having done X, now do Y"), set apart from the mantras/shlokas.
+\newcommand{\pujanote}[1]{%
+\begin{tcolorbox}[
+  colback=PujaSaffron!10,
+  colframe=PujaSaffron,
+  boxrule=0.5pt,
+  arc=1pt,
+  left=6pt,right=6pt,top=3pt,bottom=3pt,
+  fontupper=\itshape\small,
+]
+#1
+\end{tcolorbox}
+}
 
 \setcounter{secnumdepth}{-1}
 %for weird reasons this does not bookmark the section start, but the start of text in the section!!!
