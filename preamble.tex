@@ -49,29 +49,56 @@
 \definecolor{PujaSaffron}{RGB}{204,102,0}
 \definecolor{PujaCream}{RGB}{255,248,235}
 
-% \pujainfobox[image-path]{body} -- a Wikipedia-style summary panel for the
-% top of a puja chapter. The image is optional; omit the optional argument
-% (or leave it empty) to get a text-only box. #2 is free-form content, so
-% each puja can list whichever facts (deity, occasion, month, source text,
-% ...) actually apply to it.
-\newcommand{\pujainfobox}[2][]{%
+% \pujainfobox{title}{image}{tithi}{date-this-year}{date-next-year}{katha}{mulam}
+% A Wikipedia-style summary panel for the top of a puja chapter, full page
+% width. Every argument is mandatory *positionally*, but image/katha/mulam
+% may be passed as an empty {} to omit that part (the image and the katha
+% row disappear entirely when empty; #3/#4/#5 always show since every puja
+% has a tithi and a recurrence).
+%   #1 title      -- shown in the bold maroon pill at the top
+%   #2 image      -- \includegraphics path, or {} if no artwork yet
+%   #3 tithi      -- e.g. "श्रावण-पौर्णमासी"
+%   #4 date-this-year, #5 date-next-year -- use \blank{} until an editor
+%                     fills in the actual civil date for that edition
+%   #6 katha      -- e.g. \hyperref[label]{पुराण-नाम}, or {} if none exists
+%   #7 mulam      -- source text this puja follows, or {}
+\newcommand{\pujainfobox}[7]{%
 \begin{center}
 \begin{tcolorbox}[
-  width=0.92\linewidth,
+  width=\linewidth,
   colback=PujaCream,
   colframe=PujaMaroon,
   boxrule=0.6pt,
   arc=2pt,
-  left=7pt,right=7pt,top=5pt,bottom=5pt,
+  left=8pt,right=8pt,top=6pt,bottom=6pt,
 ]
-\ifblank{#1}{}{\begin{center}\includegraphics[width=0.34\linewidth]{#1}\end{center}\medskip}
-#2
+\begin{center}
+\tcbox[
+  colback=PujaMaroon,
+  colframe=PujaMaroon,
+  coltext=white,
+  arc=2pt,
+  boxrule=0pt,
+  left=10pt,right=10pt,top=4pt,bottom=4pt,
+]{\bfseries\large #1}
+\end{center}
+\ifblank{#2}{}{\medskip\begin{center}\includegraphics[width=\linewidth]{#2}\end{center}}
+\medskip
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}>{\bfseries}p{0.32\linewidth}p{0.56\linewidth}@{}}
+तिथिः & #3 \\
+इदानीं-वर्षे & #4 \\
+आगामि-वर्षे & #5 \\
+\ifblank{#6}{}{कथा & #6 \\}
+\ifblank{#7}{}{मूलम् & #7 \\}
+\end{tabular}
 \end{tcolorbox}
 \end{center}
 }
 
-% \pujanote{text} -- a slim callout for procedural stage-directions
-% (e.g. "having done X, now do Y"), set apart from the mantras/shlokas.
+% \pujanote{text} -- a slim callout box, set apart from the mantras/shlokas.
+% Used directly for a one-off aside, or via \instruct below for a
+% Sanskrit + English + Tamil stage-direction.
 \newcommand{\pujanote}[1]{%
 \begin{tcolorbox}[
   colback=PujaSaffron!10,
@@ -79,11 +106,20 @@
   boxrule=0.5pt,
   arc=1pt,
   left=6pt,right=6pt,top=3pt,bottom=3pt,
-  fontupper=\itshape\small,
 ]
 #1
 \end{tcolorbox}
 }
+
+% \instruct{sanskrit}{english}{tamil} -- a procedural stage-direction in up
+% to three languages. English/Tamil may be passed as {} if not yet
+% translated; only the languages actually supplied are shown.
+\newcommand{\instruct}[3]{%
+\pujanote{%
+\faHandORight\ #1%
+\ifblank{#2}{}{\par\smallskip\textit{English:} #2}%
+\ifblank{#3}{}{\par\smallskip\textit{தமிழ்:} #3}%
+}}
 
 \setcounter{secnumdepth}{-1}
 %for weird reasons this does not bookmark the section start, but the start of text in the section!!!
