@@ -10,13 +10,13 @@ The compiled books are checked into the repo root, ready to download and use:
 
 | File | What it is |
 |---|---|
-| [`pujavidhanam.pdf`](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujavidhanam.pdf) | The main edition — compact page size (roughly A5), two-column layout, includes Vedic mantra portions, does not include the katha (story) chapters. |
-| [`pujavidhanam-kindle-scribe.pdf`](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujavidhanam-kindle-scribe.pdf) | Reflowed for the larger Kindle Scribe screen (three-column layout, bigger page), includes the katha chapters, but omits sections that consist purely of Vedic mantras (e.g. the Yajur Upākarma text). |
-| [`pujavidhanam-vaidika-kindle-scribe.pdf`](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujavidhanam-vaidika-kindle-scribe.pdf) | Same Kindle Scribe layout and katha chapters as above, but with the Vedic mantra portions included as well — the fuller ("vaidika") edition for readers who want those sections too. |
+| [📄 `pujavidhanam.pdf`](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujavidhanam.pdf) | The main edition — compact page size (roughly A5), two-column layout, includes Vedic mantra portions, does not include the katha (story) chapters. |
+| [📄 `pujavidhanam-kindle-scribe.pdf`](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujavidhanam-kindle-scribe.pdf) | Reflowed for the larger Kindle Scribe screen (three-column layout, bigger page), includes the katha chapters, but omits sections that consist purely of Vedic mantras (e.g. the Yajur Upākarma text). |
+| [📄 `pujavidhanam-vaidika-kindle-scribe.pdf`](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujavidhanam-vaidika-kindle-scribe.pdf) | Same Kindle Scribe layout and katha chapters as above, but with the Vedic mantra portions included as well — the fuller ("vaidika") edition for readers who want those sections too. |
 
 Each of these is produced from the same `pujas.tex`/`preamble.tex`/`shloka.sty` source; the differences are just a handful of LaTeX toggles (page geometry and whether Vedic-only and katha content is pulled in) — see [Building from source](#building-from-source).
 
-If you only want a single puja rather than the whole book, `pujas-kindle-pdf/` and `pujas-kindle-scribe-pdf/` contain one self-contained PDF per puja (e.g. [`ganga-puja-vidhanam.pdf`](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-pdf/ganga-puja-vidhanam.pdf)), in the two page sizes above, each generated from the matching file in `pujas/`.
+If you only want a single puja rather than the whole book, `pujas-kindle-pdf/` and `pujas-kindle-scribe-pdf/` contain one self-contained PDF per puja (e.g. [📄 `ganga-puja-vidhanam.pdf`](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-pdf/ganga-puja-vidhanam.pdf)), in the two page sizes above, each generated from the matching file in `pujas/`.
 
 ## Repository layout
 
