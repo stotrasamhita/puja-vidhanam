@@ -80,6 +80,22 @@ Per the colophon in `frontmatter.tex`: these texts are compiled **for personal u
 
 Typeset using several LaTeX macros originally designed by H. L. Prasād; much of the Devanāgarī encoding was done with Ajit Krishnan's Mudgala IME. Thanks to [archive.org](https://archive.org) for hosting and providing access to numerous source texts.
 
+## 📑 Index
+
+**Jump to:** [Just want the PDFs?](#just-want-the-pdfs) · [Repository layout](#repository-layout) · [Building from source](#building-from-source) · [Contributing](#contributing) · [License / usage](#license--usage) · [Acknowledgements](#acknowledgements)
+
+**All release PDFs:**
+
+| Edition | PDF |
+|---|---|
+| Main edition | [📄 pujavidhanam.pdf](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujavidhanam.pdf) |
+| Kindle Scribe | [📄 pujavidhanam-kindle-scribe.pdf](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujavidhanam-kindle-scribe.pdf) |
+| Kindle Scribe, vaidika | [📄 pujavidhanam-vaidika-kindle-scribe.pdf](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujavidhanam-vaidika-kindle-scribe.pdf) |
+
+Every individual puja as its own PDF: [pujas-kindle-pdf/](pujas-kindle-pdf/README.md) (38 pujas, Kindle size) · [pujas-kindle-scribe-pdf/](pujas-kindle-scribe-pdf/README.md) (38 pujas, Kindle Scribe size)
+
+**Read it online, in multiple scripts:** [stotrasamhita.github.io/pujavidhanam](https://stotrasamhita.github.io/pujavidhanam/) — the web edition renders the text with a live Devanāgarī/Tamil/Telugu/Kannada/Malayalam/IAST script switcher. Currently a pilot covering five pujas; the rest of the corpus will be added over time.
+
 ---
 
 *The README.md files on this repo were generated and beautified with Claude.*

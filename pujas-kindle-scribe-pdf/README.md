@@ -1,0 +1,46 @@
+# Pujas — Kindle Scribe PDFs
+
+Every PDF in this folder, for direct linking/navigation. These are mechanically generated — see the root [README.md](../README.md) for how.
+
+- [📄 bhishma tarpanam vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/bhishma-tarpanam-vidhanam.pdf)
+- [📄 brindavana puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/brindavana-puja-vidhanam.pdf)
+- [📄 chitragupta puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/chitragupta-puja-vidhanam.pdf)
+- [📄 dhanvantari puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/dhanvantari-puja-vidhanam.pdf)
+- [📄 ekadashi purusha sukta vidhana puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/ekadashi-purusha-sukta-vidhana-puja-vidhanam.pdf)
+- [📄 ganga puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/ganga-puja-vidhanam.pdf)
+- [📄 go puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/go-puja-vidhanam.pdf)
+- [📄 janmashtami puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/janmashtami-puja-vidhanam.pdf)
+- [📄 kartika mahatmyam vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/kartika-mahatmyam-vidhanam.pdf)
+- [📄 kartika somavara arghyam vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/kartika-somavara-arghyam-vidhanam.pdf)
+- [📄 kaveri puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/kaveri-puja-vidhanam.pdf)
+- [📄 laghu panchayatana puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/laghu-panchayatana-puja-vidhanam.pdf)
+- [📄 lakshmi kubera puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/lakshmi-kubera-puja-vidhanam.pdf)
+- [📄 nrisimha jayanti puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/nrisimha-jayanti-puja-vidhanam.pdf)
+- [📄 panchanga puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/panchanga-puja-vidhanam.pdf)
+- [📄 sankataharachaturthi vinayaka puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/sankataharachaturthi-vinayaka-puja-vidhanam.pdf)
+- [📄 sankramana snanam vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/sankramana-snanam-vidhanam.pdf)
+- [📄 sarasvati puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/sarasvati-puja-vidhanam.pdf)
+- [📄 savitri vratam vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/savitri-vratam-vidhanam.pdf)
+- [📄 shankara jayanti puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/shankara-jayanti-puja-vidhanam.pdf)
+- [📄 shivaratri puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/shivaratri-puja-vidhanam.pdf)
+- [📄 shivaratri yama 1 puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/shivaratri-yama-1-puja-vidhanam.pdf)
+- [📄 shivaratri yama 2 puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/shivaratri-yama-2-puja-vidhanam.pdf)
+- [📄 shivaratri yama 3 puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/shivaratri-yama-3-puja-vidhanam.pdf)
+- [📄 shivaratri yama 4 puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/shivaratri-yama-4-puja-vidhanam.pdf)
+- [📄 shravana mahatmyam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/shravana-mahatmyam.pdf)
+- [📄 siddhivinayaka puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/siddhivinayaka-puja-vidhanam.pdf)
+- [📄 skanda shashthi puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/skanda-shashthi-puja-vidhanam.pdf)
+- [📄 sriramanavami puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/sriramanavami-puja-vidhanam.pdf)
+- [📄 surya arghyam vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/surya-arghyam-vidhanam.pdf)
+- [📄 surya namaskara vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/surya-namaskara-vidhanam.pdf)
+- [📄 surya puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/surya-puja-vidhanam.pdf)
+- [📄 tulasi puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/tulasi-puja-vidhanam.pdf)
+- [📄 uma maheshvara puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/uma-maheshvara-puja-vidhanam.pdf)
+- [📄 varamahalakshmi puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/varamahalakshmi-puja-vidhanam.pdf)
+- [📄 vyasa puja vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/vyasa-puja-vidhanam.pdf)
+- [📄 yajur upakarma vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/yajur-upakarma-vidhanam.pdf)
+- [📄 yama tarpanam vidhanam](https://github.com/stotrasamhita/puja-vidhanam/blob/master/pujas-kindle-scribe-pdf/yama-tarpanam-vidhanam.pdf)
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*
