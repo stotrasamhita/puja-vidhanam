@@ -13,3 +13,7 @@
 - `pitha-puja.tex` — pīṭha pūjā (worship of the deity's seat/pedestal).
 - `prana-pratishtha.tex` — prāṇa-pratiṣṭhā (invoking life/presence into the image).
 - `vighneshwara-puja.tex` — the pūrvāṅga Vighneśvara (Gaṇeśa) pūjā done at the start of a ritual to clear obstacles; `ganesha.pdf` is the accompanying image it includes.
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*

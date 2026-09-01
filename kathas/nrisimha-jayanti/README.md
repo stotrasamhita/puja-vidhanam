@@ -5,3 +5,7 @@
 - `nrisimha-jayanti-vrata-katha.tex` — the separate Nṛsiṃha-jayantī vrata katha, Sūta's telling of the vrata's observance.
 
 Each `-orig` file is the source text as received; the non-`orig` sibling is the lightly cleaned/typeset version (spacing, sandhi) used in the book.
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*

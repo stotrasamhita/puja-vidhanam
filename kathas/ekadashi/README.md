@@ -4,3 +4,7 @@ Two source subfolders, each collecting Ekādaśī māhātmyas from a different t
 
 - `padma-puranam/` — the Padma Purāṇa's cycle, one chapter per named Ekādaśī, plus a `chapters/` split-out.
 - `vrata-raja/` — a single Ekādaśī māhātmya from the Vrata Rāja.
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*

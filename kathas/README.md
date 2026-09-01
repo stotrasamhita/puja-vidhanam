@@ -24,3 +24,7 @@ Multiple stories can exist for the same occasion (e.g. both `nrisimha-jayanti/bh
 ## Note
 
 These files aren't listed in `../pujas.tex` directly; instead, the relevant puja file in `../pujas/` `\input`s its associated katha(s) itself, usually guarded by `\ifbool{katha}{...}{}` — e.g. `pujas/sriramanavami-puja.tex` pulls in `kathas/sriramanavami/sriramanavami-vrata-katha`. That toggle is off in the main `pujavidhanam.pdf` edition and on in both Kindle Scribe editions — see the root README.
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*

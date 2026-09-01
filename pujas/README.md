@@ -64,3 +64,7 @@ Superseded material, kept for reference rather than compiled into the current bo
 - `ekadashi.tex` — an earlier standalone Ekādaśī vrata writeup, superseded by `ekadashi-purusha-sukta-vidhana-puja.tex`.
 
 None of the files in `old/` are `\input` by `../pujas.tex`.
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*

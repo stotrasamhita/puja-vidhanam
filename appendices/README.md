@@ -7,3 +7,7 @@ Reference tables of pañcāṅga (Hindu calendrical) terminology, `\input` at th
 - `nakshatra-names.tex` — the 27 nakṣatras (lunar mansions).
 - `yoga-names.tex` — the 27 yoga-s used in pañcāṅga reckoning.
 - `karana-names.tex` — the eleven karaṇa-s (half-tithi units): the seven repeating ("cara") ones and the four fixed ("sthira") ones, plus a table of which karaṇa falls in which half of each tithi.
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*

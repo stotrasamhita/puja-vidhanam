@@ -79,3 +79,7 @@ Per the colophon in `frontmatter.tex`: these texts are compiled **for personal u
 ## Acknowledgements
 
 Typeset using several LaTeX macros originally designed by H. L. Prasād; much of the Devanāgarī encoding was done with Ajit Krishnan's Mudgala IME. Thanks to [archive.org](https://archive.org) for hosting and providing access to numerous source texts.
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*

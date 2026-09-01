@@ -33,3 +33,7 @@ The Padma Purāṇa Ekādaśī-māhātmya (`../ekadashi-mahatmyam-padma-puranam.
 | `63-prabodhini.tex` | Prabodhinī |
 | `64-kamala.tex` | Kamalā |
 | `65-parama.tex` | Paramā |
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*
