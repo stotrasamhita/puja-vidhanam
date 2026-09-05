@@ -11,6 +11,8 @@
 \usepackage{supertabular}
 \usepackage{fontawesome}
 
+\newcommand{\tamfamily}{\fontspec[Script=Tamil,FakeStretch=0.8]{Noto Serif Tamil}}
+
 %%% HEADERS and FOOTERS %%%
 \usepackage{fancyhdr}
 \pagestyle{fancyplain}
@@ -118,7 +120,7 @@
 \pujanote{%
 \faHandORight\ #1%
 \ifblank{#2}{}{\par\smallskip\textit{English:} #2}%
-\ifblank{#3}{}{\par\smallskip\textit{தமிழ்:} #3}%
+\ifblank{#3}{}{\par\smallskip\tamfamily{} \textit{தமிழ்:} #3}%
 }}
 
 \setcounter{secnumdepth}{-1}
