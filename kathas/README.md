@@ -10,9 +10,11 @@ Shorter, single-file stories sit directly in this folder, e.g.:
 
 Occasions with more material — multiple tellings, or a story spanning many chapters — get their own subfolder, one per occasion:
 
-- `chaturthi/`, `ekadashi/`, `janmashtami/`, `kartika-mahatymam/`, `margashirsha-mahatmyam/`, `nrisimha-jayanti/`, `shankara-jayanti/`, `shivaratri/`, `shravana-mahatmyam/`, `sriramanavami/`, `vaishakha-mahatmyam/`, `varalakshmi-vratam/`
+- `chaturthi/`, `ekadashi/`, `janmashtami/`, `kartika-mahatymam/`, `margashirsha-mahatmyam/`, `nrisimha-jayanti/`, `shankara-jayanti/`, `shivaratri/`, `shravana-mahatmyam/`, `sriramanavami/`, `vaishakha-mahatmyam/`, `varalakshmi-vratam/`, `rishi-panchami/`, `amavasya-somavara-vratam/`
 
-Within one of these, where a version of the story is drawn from a particular source Purāṇa, it typically gets a further subfolder named for that source, e.g. `chaturthi/mudgala-puranam/`, `ekadashi/padma-puranam/`, `ekadashi/vrata-raja/`. A few occasion folders instead hold a long text split into numbered chapter files (`kartika-mahatymam/src/001.md`, `002.md`, ... or `ekadashi/padma-puranam/chapters/37-unmilani.tex`, `38-pakshavardhini.tex`, ...) alongside the assembled `.tex` file that pulls them together — `kartika-mahatymam/src/` in particular also keeps the original plain-text/Markdown source the `.tex` was transcribed from.
+Within one of these, where a version of the story is drawn from a particular source Purāṇa, it typically gets a further subfolder named for that source, e.g. `chaturthi/mudgala-puranam/`, `ekadashi/padma-puranam/`, `ekadashi/vrata-raja/`, `chaturthi/vrataratnakara/` (an additional Vināyaka-vrata-kalpa katha sourced from the *Vrataratnakara*, `\input` by `pujas/siddhivinayaka-puja.tex` alongside the other two Vināyaka kathas already there).
+
+- `rishi-panchami/rishi-panchami-vrata-katha.tex` and `amavasya-somavara-vratam/amavasya-somavara-vrata-katha.tex` — Bhaviṣyottara-Purāṇa kathas for the newer `pujas/rishi-panchami-puja.tex` and `pujas/amavasya-somavara-puja.tex`, both sourced from the *Vrataratnakara*. A few occasion folders instead hold a long text split into numbered chapter files (`kartika-mahatymam/src/001.md`, `002.md`, ... or `ekadashi/padma-puranam/chapters/37-unmilani.tex`, `38-pakshavardhini.tex`, ...) alongside the assembled `.tex` file that pulls them together — `kartika-mahatymam/src/` in particular also keeps the original plain-text/Markdown source the `.tex` was transcribed from.
 
 Multiple stories can exist for the same occasion (e.g. both `nrisimha-jayanti/bhagavatam-07-08.tex`/`bhagavatam-07-09.tex` and `nrisimha-jayanti/nrisimha-jayanti-vrata-katha.tex`) where more than one traditional telling is included.
 

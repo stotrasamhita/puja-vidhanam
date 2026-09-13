@@ -9,7 +9,9 @@ Performed daily, on recurring tithis, or on a fixed periodic schedule rather tha
 - `laghu-panchayatana-puja.tex` — the short/abbreviated pañcāyatana pūjā (worship of the five deities together).
 - `surya-arghyam.tex` — daily arghya to Sūrya.
 - `ekadashi-purusha-sukta-vidhana-puja.tex` — Ekādaśī pūjā to Mahāviṣṇu using the Puruṣa Sūkta.
+- `pradosha-puja.tex` — Pradoṣa pūjā to Śiva, observed each pakṣa on trayodaśī.
 - `sankataharachaturthi-vinayaka-puja.tex` — Vināyaka pūjā for Saṅkaṣṭahara Caturthī (the monthly Gaṇeśa caturthī).
+- `amavasya-somavara-puja.tex` — Aśvattha-Nārāyaṇa pūjā, observed whenever an Amāvāsyā falls on a Monday.
 - `panchanga-puja.tex` — worship of the pañcāṅga (almanac) itself, typically done at the start of the year/day's rites.
 
 ## Annual vrata pujas
@@ -25,11 +27,13 @@ Tied to a specific yearly festival or observance:
 - `yajur-upakarma.tex` — Yajur Upākarma (only included in editions built with the `veda` toggle on — see the root README).
 - `janmashtami-puja.tex` — Kṛṣṇa Janmāṣṭamī.
 - `siddhivinayaka-puja.tex` — Siddhivināyaka pūjā.
+- `rishi-panchami-puja.tex` — Ṛṣipañcamī vratam (pūjā to the Saptarṣis and Arundhatī).
 - `uma-maheshvara-puja.tex` — Umā-Maheśvara pūjā.
 - `sarasvati-puja.tex` — Sarasvatī pūjā.
 - `dhanvantari-puja.tex` — Dhanvantari pūjā.
 - `lakshmi-kubera-puja.tex` — Lakṣmī-Kubera pūjā.
 - `skanda-shashthi-puja.tex` — Skanda Ṣaṣṭhī.
+- `shukla-shashthi-puja.tex` — Śukla-ṣaṣṭhī vratam, a Nāgarāja pūjā for progeny (distinct from Skanda Ṣaṣṭhī above).
 - `brindavana-puja.tex` — Bṛndāvana (tulasī) pūjā.
 - `surya-puja.tex` — Sūrya pūjā.
 - `go-puja.tex` — Go (cow) pūjā.
@@ -47,7 +51,10 @@ Not tied to one annual date — performed on an occurring astronomical/calendric
 - `kartika-mahatmyam.tex` — glory/observance associated with the month of Kārtika.
 - `ganga-puja.tex` — Gaṅgā pūjā.
 - `kaveri-puja.tex` — Kāverī pūjā.
+- `akhanda-deepa-puja.tex` — Akhaṇḍadīpa-pūjā-kalpaḥ, a month-long perpetual-lamp rite to Mahāviṣṇu (Āśvayuja-kṛṣṇa-pratipad through the next Darśa).
+- `magha-snana.tex` — Māgha-snāna-vidhiḥ, the early-morning bathing rite for the month of Māgha.
 - `surya-namaskara.tex` — Sūrya Namaskāra.
+- `ratha-saptami-snana.tex` — Ratha-saptamī-snāna-mantrāḥ.
 - `yama-tarpanam.tex` — tarpaṇa to Yama.
 - `bhishma-tarpanam.tex` — tarpaṇa to Bhīṣma.
 
