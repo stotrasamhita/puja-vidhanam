@@ -4,6 +4,7 @@ The Padma Purāṇa Ekādaśī-māhātmya (`../ekadashi-mahatmyam-padma-puranam.
 
 | File | Ekādaśī |
 |---|---|
+| `36-trisprisha.tex` | Trispṛśā |
 | `37-unmilani.tex` | Unmīlanī |
 | `38-pakshavardhini.tex` | Pakṣavardhinī |
 | `39-jagaranamahima.tex` | Jāgaraṇamahimā |
