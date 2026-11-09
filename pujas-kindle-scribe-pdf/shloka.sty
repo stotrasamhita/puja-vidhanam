@@ -120,10 +120,10 @@
 \setbox\@tempboxb=\hbox{\ShlokaStrut #2}%
 \ifdim\wd\@tempboxa>\wd\@tempboxb%
 \@tempdima=\wd\@tempboxa%
-\shlokatopskip\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa ।}\shlokamidskip\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}॥\relax \nextShloka॥\footnotesize{#3}\hspace{-3ex}}}\hfil}%
+\shlokatopskip\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa ।}\shlokamidskip\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}॥\relax \nextShloka॥\rlap{#3}}}\hfil}%
 \else%
 \@tempdima=\wd\@tempboxb%
-\shlokatopskip\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}।}\shlokamidskip\hbox{\box\@tempboxb॥\relax \nextShloka॥\footnotesize{#3}\hspace{-3ex}}}\hfil}%
+\shlokatopskip\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}।}\shlokamidskip\hbox{\box\@tempboxb॥\relax \nextShloka॥\rlap{#3}}}\hfil}%
 \fi}
 
 \newcommand{\twolineshlokaStar}[2]{%
@@ -249,6 +249,37 @@
 \fi%
 \fi}
 
+\newcommand{\sixlineindentedshloka}[6]{%
+\vskip\shlokavskip\vsp
+\setbox\@tempboxa=\hbox{\ShlokaStrut #1}%
+\setbox\@tempboxb=\hbox{\ShlokaStrut #3}%
+\setbox\@tempboxc=\hbox{\ShlokaStrut #5}%
+\setbox\@tempboxd=\hbox{\ShlokaStrut #2}%
+\setbox\@tempboxe=\hbox{\ShlokaStrut #4}%
+\setbox\@tempboxf=\hbox{\ShlokaStrut #6}%
+\ifdim\wd\@tempboxa>\wd\@tempboxb%
+\@tempdima=\wd\@tempboxa%
+\else%
+\@tempdima=\wd\@tempboxb%
+\fi%
+\ifdim\wd\@tempboxc>\wd\@tempboxa%
+\@tempdima=\wd\@tempboxc%
+\fi%
+\ifdim\wd\@tempboxd>\wd\@tempboxe%
+\@tempdimb=\wd\@tempboxd%
+\else%
+\@tempdimb=\wd\@tempboxe%
+\fi%
+\ifdim\wd\@tempboxf>\wd\@tempboxd%
+\@tempdimb=\wd\@tempboxf%
+\fi%
+\shlokatopskip\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa}\shlokamidskip%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxd ।}\shlokamidskip%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}}\shlokamidskip%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxe ।}\shlokamidskip%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxc}}\shlokamidskip%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxf}॥\relax \nextShloka॥}}\hfil}%
+}
 \newcommand{\fourlineindentedshlokaStar}[4]{%
 \vskip\shlokavskip\vsp
 \setbox\@tempboxa=\hbox{\ShlokaStrut #1}%
